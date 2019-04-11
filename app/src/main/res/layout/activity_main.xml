@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout2">
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/mainETId"
+            android:hint="ID"
+            android:textStyle="italic"
+            android:layout_width="200dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:id="@+id/mainETPassword"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:hint="password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainETId"
+            android:layout_alignParentStart="true"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/mainBtnIdPsSearch"
+            android:layout_below="@+id/mainETPassword"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignRight="@+id/mainETPassword"
+            android:text="아이디/비밀번호 찾기"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:background="#00ff0000"/>
+        <CheckBox
+            android:id="@+id/mainCBLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인 유지"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/mainCBId"
+            android:layout_alignBottom="@+id/mainCBId"
+            android:layout_alignParentStart="true" />
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mainCBId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainBtnIdPsSearch"
+            android:layout_toRightOf="@+id/mainCBLogin"
+            android:text="아이디 저장"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/mainBtnOk"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#00ff0000"
+            android:text="로그인"
+            android:layout_below="@+id/mainCBId"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativeLayout"
+        android:background="#baaad7"
+        android:id="@+id/view" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/mainBtnSignup"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/join"/>
+        <ImageButton
+            android:id="@+id/mainBtnNaverLogin"
+            android:layout_marginTop="20dp"
+            android:layout_width="180sp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="false"
+            android:layout_below="@+id/mainBtnSignup"
+            android:background="@drawable/naver_login"/>
+    </RelativeLayout>
+</RelativeLayout>

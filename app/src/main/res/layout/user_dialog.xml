@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300sp"
+    android:layout_height="400sp"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/UserDialogIVUser"
+        android:src="@drawable/whiteman"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:background="#efaccf"
+        android:layout_marginTop="20dp"
+        android:id="@+id/UserDialogBtnEdit"
+        android:text="회원정보수정"
+        android:textSize="20sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserDialogIVUser"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:background="#efaccf"
+        android:layout_marginTop="20dp"
+        android:id="@+id/UserDialogBtnLogout"
+        android:text="로그아웃"
+        android:textSize="20sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserDialogBtnEdit"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:background="#efaccf"
+        android:layout_marginTop="22dp"
+        android:id="@+id/UserDialogBtnSignOut"
+        android:text="회원탈퇴"
+        android:textSize="20sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserDialogBtnLogout"
+        android:layout_alignStart="@+id/UserDialogBtnLogout" />
+</RelativeLayout>

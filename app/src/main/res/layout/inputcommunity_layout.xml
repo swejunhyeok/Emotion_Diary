@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:background="@drawable/textbackground"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/InputCommunityETTitle"
+            android:layout_marginTop="80sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:hint="제목 입력"/>
+        <EditText
+            android:id="@+id/InputCommunityETWrite"
+            android:background="@null"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="내용 입력"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/InputCommunityBtnSave"
+        android:background="#fcc7cb"
+        android:layout_margin="10sp"
+        android:text="저장"
+        android:textSize="20sp"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
